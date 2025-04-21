@@ -19,5 +19,8 @@ export const TypeOrmConfig = TypeOrmModule.forRootAsync({
         synchronize: true,
         logging: false,
         dropSchema: true,
+        ssl: {
+            rejectUnauthorized: false,
+        }
     }),
 });
